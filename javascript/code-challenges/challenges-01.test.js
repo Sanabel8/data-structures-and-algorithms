@@ -75,7 +75,7 @@ const greeting = (word) => {
 const speaker = (words, callback) => {
   // Solution code here...
   const localArr4 = [];
-  words.forEach(element => {
+  words.forEach((element) => {
     const newValue = callback(element);
     localArr4.push(newValue);
   });
