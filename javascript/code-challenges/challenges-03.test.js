@@ -11,7 +11,7 @@ const addTwo = (arr) => {
   let newArr = [];
   for (let index = 0; index < arr.length; index++) {
 
-    let addNum = arr[i] + 2
+    let addNum = arr[index] + 2
     newArr.push(addNum);
 
   }
@@ -36,8 +36,8 @@ const typeNum = (arr) => {
 
   // Solution code here...
   let newArr= arr.filter(value => {
-    if (typeof value === 'nember') {
-      return (newArr);
+    if (typeof value === 'number') {
+      return (value);
     }
   });
 return newArr;
@@ -63,7 +63,7 @@ const containsAnd = (arr) => {
   // Solution code here...
   let newArr= arr.filter(value => {
     if ( value.includes('and')) {
-      return (newArr);
+      return (value);
     }
   });
 return newArr;
@@ -100,13 +100,13 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
   let notIncludeArr=[];
-  arr.filter(item=>{
-    if (!forbiddenValues.includes(item)){
-      notIncludeArr.push(item);
+  arr.filter(val=>{
+    if (!forbiddenValues.includes(val)){
+      notIncludeArr.push(val);
  
     }
   });
-return newArr;
+return notIncludeArr;
 
 };
 
