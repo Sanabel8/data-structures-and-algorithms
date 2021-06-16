@@ -105,7 +105,7 @@ const wordsToCharList = (arr) => {
 
   return arr.split('');
 
-  return
+  
 };
 
 
