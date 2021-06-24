@@ -101,9 +101,8 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
-  let regex = /\d/g;
-  let value = regex.test(value);
-  return value;
+  let regex=/[0-9]/;
+  return regex.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
