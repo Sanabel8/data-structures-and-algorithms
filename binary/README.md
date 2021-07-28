@@ -1,32 +1,8 @@
 # Binary Search of Sorted Array
 <!-- Description of the challenge -->
-Binary Tree Data Structure has elements and each elemnt has at most 2 children and each child called left and right child. Each Node contains:
-
-1.Data
-2.Pointer to left child
-3.Pointer to right child
-
-Traversals: Traversing a tree allows us to search for a node and print out the contents of a tree.
-
-Depth First Depth first traversal is where we prioritize going through the height of the tree first. There are three methods for depth first traversal:
-
-1.Pre-order: root >> left >> right
-2.In-order: left >> root >> right
-3.Post-order: left >> right >> root
-
+Create a method that take 2 parameters (int array and int searchKey) and return the index of the array's element that is equal to the value of the search key, or -1 if the element is not in the array.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-** This challenge about how to build a binary tree, store Nodes in it and apply Depth First methods. Also how to build binary search tree class contains add() method and contains method.
-
-Methods in Binary Tree class
-. postOrder(Node node): depth-first traversal to print and store the nods in array list by left >> right >> root way.
-. inOrder(Node node ): depth-first traversal to print and store the nods in array list byleft >> root >> right way.
-. preOrder(Node node): depth-first traversal to print and store the nods in array list byroot >> left >> right way.
-
-Methods in Binary Search Tree class
-. add(int key): Adds a new node with that value in the correct location in the binary search tree.
-. contains(int key): Returns boolean indicating whether or not the value is in the tree at least once.
-. traverse (Node current, int key): Check the value from add() method to put it in the right location.
-(binaryReadme)[C:\Users\TLCAT-1220\Desktop\301\new\codefellows\data-structures-and-algorithms\binary\README.md]
-(img)[binary/binary.png]
+[white boerd](code3binary1.jpg)
+[whitebored](code3binarycode.jpg)
