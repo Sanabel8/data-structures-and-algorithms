@@ -3,69 +3,44 @@
  */
 package binary;
 
-
-import javax.xml.soap.Node;
-
 public class App {
-
-
-    Node root;
-
-    public void App() {
-      root = null;
+    public String getGreeting() {
+        return "Hello World!";
     }
 
-    public void add(int key){
+  public static int binarySearch(int arr [], int searchKey){
 
-      if (root == null){
-        root = new Node(key);
-      }else{
-        Node current = root;
-        traverse(current,key);
-      }
-    }
-
-    private void traverse (Node current, int key){
-
-      if(key > current.getKey()){
-        if(current.getRight() == null){
-          current.setRight(new Node(key));
-          return;
+    int lowIdx = 0;
+    int highIdx = arr.length - 1;
+    int midIdx = ( lowIdx + highIdx ) / 2;
+    int value = midIdx;
+    while (true){
+      if(searchKey > arr[midIdx] ){
+        lowIdx = midIdx +1;
+        midIdx = ( lowIdx + highIdx ) / 2;
+        if(lowIdx > midIdx){
+          value = -1;
+          break;
         }
-
-        current = current.getRight();
-      }else{
-        if(current.getLeft() == null){
-          current.setLeft(new Node (key));
-          return;
+      }else if(searchKey < arr[midIdx]){
+        highIdx = midIdx - 1;
+        midIdx = ( lowIdx + highIdx ) / 2;
+        if(highIdx < midIdx){
+          value = -1;
+          break;
         }
-        current = current.getLeft();
-      }
-      traverse(current,key);
-    }
-
-    public void inorder(){
-      inorderRec(root);
-    }
-
-    public void inorderRec(Node root){
-      if (root != null) {
-        inorderRec(root.getLeft());
-        System.out.println(root.getKey());
-        inorderRec(root.getRight());
+      }else if(searchKey == arr[midIdx]){
+        value = midIdx;
+        break;
       }
     }
+    return value;
+  }
 
-    public boolean contains(int key){
-      while (root != null) {
-        if (key > root.getKey())
-          root = root.getRight();
-        else if (key < root.getKey())
-          root = root.getLeft();
-        else
-          return true;
-      }
-      return false;
+    public static void main(String[] args) {
+        System.out.println(new App().getGreeting());
+      int arr[] = {1, 3, 5,7,11,13,17,19,23,29,31,37,41,43,47,53,59};
+      int x = binarySearch(arr,0);
+      System.out.print(x);
     }
-
- }
+}
