@@ -17,5 +17,5 @@ Verify code matches algorithm.
 Methods in LinkedList Class
 insert(Node newNode): This method accepts a Node parameter and its purpose to add a new Node in the LinkedList.
 
-isInclude(Node head, int value): This method accepts a Node parameter and int parameter and its purpose to test our Nodes' values if they are found so the test gives us true or return false.
+isInclude(Node head, int value): This method accepts a Node parameter and int parameter and its purpose to test our Nodes' values if they are found so the test gives us true or return false.             
 
