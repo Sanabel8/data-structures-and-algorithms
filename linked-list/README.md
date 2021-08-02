@@ -17,5 +17,23 @@ Verify code matches algorithm.
 Methods in LinkedList Class
 insert(Node newNode): This method accepts a Node parameter and its purpose to add a new Node in the LinkedList.
 
-isInclude(Node head, int value): This method accepts a Node parameter and int parameter and its purpose to test our Nodes' values if they are found so the test gives us true or return false.             
+isInclude(Node head, int value): This method accepts a Node parameter and int parameter and its purpose to test our Nodes' values if they are found so the test gives us true or return false.     
+
+
+# Challenge Summary
+<!-- Description of the challenge -->
+append(int value) : make method adds a new node with the given new value immediately after the first node that has the value specified
+
+insertBefore(int data, int newData) :make method to adds a new node with the given new value immediately before the first node that has the value specified
+
+insertAfter(int data, int newValue) :make method to added anew node to the end of the list
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[white-board-1](linked-list/images/white bord 1.jpg)
+[white-bord-2](linked-list/images/white bord2.jpg)
+[white-board-3](linked-list/images/whitebord 3.jpg)
+
+
+
 

@@ -21,12 +21,13 @@ public class App {
       test.add(11);
       test.add(21);
 
-
       test.includes(5);
       test.tostring();
 
+      test.append(3);
+      test.insertBefore(1,3);
+      test.insertAfter(11,5);
     }
-
 
     }
 

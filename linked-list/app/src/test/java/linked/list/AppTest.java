@@ -47,4 +47,30 @@ class AppTest {
     assertEquals("{2} ->{22} ->{222} ->NULL" , test.tostring());
 
 }
+@Test void testAppend(){
+  LinkedList test = new LinkedList();
+  test.append(2);
+  test.append(22);
+  test.append(222);
+  assertEquals("{2} ->{22} ->{222} ->NULL" , test.tostring());
+
+}
+  @Test void testInsertBefore(){
+    LinkedList test = new LinkedList();
+    test.append(2);
+    test.append(22);
+    test.append(222);
+    test.insertBefore(222,111);
+    assertEquals("{2} ->{22} ->{222} ->NULL" , test.tostring());
+
+  }
+  @Test void testInsertAfter(){
+    LinkedList test = new LinkedList();
+    test.append(2);
+    test.append(22);
+    test.append(222);
+    test.insertAfter(222,2222);
+    assertEquals("{2} ->{22} ->{222} ->NULL" , test.tostring());
+
+  }
 }
