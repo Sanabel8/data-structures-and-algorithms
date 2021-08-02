@@ -30,9 +30,9 @@ insertAfter(int data, int newValue) :make method to added anew node to the end o
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[white-board-1](linked-list/images/white bord 1.jpg)
-[white-bord-2](linked-list/images/white bord2.jpg)
-[white-board-3](linked-list/images/whitebord 3.jpg)
+[white-board-1](linked-list/images/1-whiteborad.jpg)
+[white-bord-2](linked-list/images/2-whiteboard.jpg)
+[white-board-3](linked-list/images/3-whiteborad.jpg)
 
 
 
