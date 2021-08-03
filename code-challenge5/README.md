@@ -10,7 +10,6 @@ Adds a new node with that value to the head of the list with an O(1) Time perfor
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Verify Big O(1) of written code.
-
 Verify code matches algorithm.
 
 ## API
@@ -31,3 +30,37 @@ insertAfter(int data, int newValue): make method adds a new node with the given 
 [white-borad2](whitebord2.jpg)
 [white-borad3](whiteboard3.jpg)
 isInclude(Node head, int value): This method accepts a Node parameter and int parameter and its purpose to test our Nodes' values if they are found so the test gives us true or return false.             
+
+
+
+
+# Challenge Summary
+<!-- Description of the challenge -->
+write method Return the node’s value that is k places from the tail of the linked list.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[linked-list-kth](code-challenge5/linked-list-kth.jpg)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+  space: o(n)
+  time : o(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+input head -> [1] -> [3] -> [8] -> [2] -> X
+output 2
+Arg k  3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
