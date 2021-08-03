@@ -25,6 +25,38 @@ public class App {
 
       test.includes(5);
       test.tostring();
+
+      test.append(3);
+      test.append(20);
+      test.append(40);
+      test.append(100);
+      System.out.println(test.append(100));
+      System.out.println(test.append(20));
+      System.out.println(test.append(40));
+
+      System.out.println("----------------------------------------------");
+      LinkedList test3 = new LinkedList();
+      test3.append(2);
+      test3.append(22);
+      test3.append(222);
+      test3.append(2222);
+      test3.insertBefore(222,0);
+      System.out.println(test3.tostring());
+
+      System.out.println("----------------------------------------------");
+      LinkedList test2 = new LinkedList();
+      test2.append(2);
+      test2.append(22);
+      test2.append(222);
+      test2.append(2222);
+      test2.insertAfter(222,0);
+      System.out.println(test2.tostring());
+
+      System.out.println("----------------------------------------------");
+
+      test.kLocation(3);
+      System.out.println(test.kLocation(3));
+
     }
 
 }

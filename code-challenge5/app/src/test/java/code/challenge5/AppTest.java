@@ -5,6 +5,7 @@ package code.challenge5;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AppTest {
     @Test void appHasAGreeting() {
@@ -43,5 +44,106 @@ class AppTest {
     test.insert(222);
     assertEquals("{2} ->{22} ->{222} ->NULL" , test.tostring());
 
+  }
+  // for code challenge 6
+  @Test void testAppendedNodeInEnd(){
+    LinkedList test1 = new LinkedList();
+    test1.append(2);
+    test1.append(22);
+    test1.append(222);
+    test1.append(5);
+    assertEquals("{2} ->{22} ->{222} ->{5} ->NULL",test1.tostring());
+  }
+@Test void testAppendedMultipleAtEnd(){
+  LinkedList test1 = new LinkedList();
+  test1.append(2);
+  test1.append(22);
+  test1.append(222);
+  test1.append(5);
+  test1.append(6);
+  test1.append(7);
+  assertEquals("{2} ->{22} ->{222} ->{5} ->{6} ->{7} ->NULL",test1.tostring());
+}
+  @Test void testInsertBefore(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insert(2222);
+    test1.insertBefore(22,1);
+    assertEquals("{2} ->{1} ->{22} ->{222} ->{2222} ->NULL",test1.tostring());
+  }
+  @Test void testInsertBeforeMiddle(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insertBefore(22,1);
+    assertEquals("{2} ->{1} ->{22} ->{222} ->NULL",test1.tostring());
+  }
+  @Test void testInsertAfter(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insert(2222);
+    test1.insertAfter(22,1);
+    assertEquals("{2} ->{22} ->{1} ->{222} ->{2222} ->NULL",test1.tostring());
+  }
+  @Test void testInsertAfterMiddleNode(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insertAfter(22,1);
+    assertEquals("{2} ->{22} ->{1} ->{222} ->NULL",test1.tostring());
+  }
+  @Test void testInsertAfterLastNode(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insert(2222);
+    test1.insertAfter(2222,1);
+    assertEquals("{2} ->{22} ->{222} ->{2222} ->{1} ->NULL",test1.tostring());
+  }
+
+  // for code challenge 7
+  @Test public void testKLocationHappyPath(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    test1.insert(2222);
+    test1.insert(22222);
+    assertEquals("k[3] = 22",test1.kLocation(3));
+  }
+  @Test public void testKLocationSize1(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    assertEquals("k[1] = 22",test1.kLocation(1));
+  }
+  @Test public void testKLocationNotPositive(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    assertEquals("Exception",test1.kLocation(-2));
+  }
+  @Test public void testKLocationSameLenght(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    assertEquals("k[2] = 2",test1.kLocation(2));
+  }
+  @Test public void testKLocationoverSize(){
+    LinkedList test1 = new LinkedList();
+    test1.insert(2);
+    test1.insert(22);
+    test1.insert(222);
+    assertEquals("Exception",test1.kLocation(5));
   }
 }
