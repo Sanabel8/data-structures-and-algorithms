@@ -100,7 +100,7 @@ public class LinkedList {
 //   }
 public String insertBefore( int value, int newNum){
   Node newNode = new Node(newNum);
-  Node current = this.head;
+  Node current = head;
   if (head ==null){
     return null;
   }else {

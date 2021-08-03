@@ -54,6 +54,24 @@ Arg k  3
 
 
 
+# Challenge Summary
+<!-- Description of the challenge -->
+appended method : make method to added anew node to the end of the list
+insertBefore method : make method to adds a new node with the given new value immediately before the first node that has the value specified
+insert after method: make method adds a new node with the given new value immediately after the first node that has the value specified
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[append](code-challenge5/append.jpg)
+[insert-before](code-challenge5/insertBefore.jpg)
+[insertAfter](code-challenge5/insertAfter.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity for all method 
+  space: o(n)
+  time : o(n)
+
+
 
 
 
