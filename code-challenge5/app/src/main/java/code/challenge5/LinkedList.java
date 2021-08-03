@@ -1,15 +1,15 @@
 package code.challenge5;
-
 import java.util.ArrayList;
 
 public class LinkedList {
   Node head;
   private int length;
+  int size;
 
   //insert value to the end
-  public String insert(int value) {
+  public float insert(int value) {
     Node addedNode = new Node(value);
-    Node current = head;
+    Node current = this.head;
     if (head == null) {
       head = addedNode;
     } else {
@@ -18,16 +18,9 @@ public class LinkedList {
       }
       current.next = addedNode;
     }
-    return null;
+    return 0;
   }
 
-  // added value to the begining of linkelist
-  public String add(int newNode) {
-    Node new_node = new Node(newNode);
-    new_node.next = head;
-    head = new_node;
-    return null;
-  }
 
   public boolean includes(int value) {
     Node current = this.head;
@@ -78,79 +71,87 @@ public class LinkedList {
     return value;
   }
 
-//   public void insertBefore(int value , int newData){
-//     Node newNode = new Node(newData);
-//     if (head == null) {
-//       head = newNode;
-//     } else if (head.value == value) {
-//       Node theRightNode = head;
-//       head = newNode;
-//       newNode.next = theRightNode;
-//     } else {
-//       Node current = head;
-//       while (current != null) {
-//         if (current.value == value) {
-//           Node nextNode = current.next;
-//           current.next = newNode;
-//           newNode.next = nextNode;
-//         }
-//         current = current.next;
-//       }
-//     }
-//   }
-public String insertBefore( int value, int newNum){
-  Node newNode = new Node(newNum);
-  Node current = head;
-  if (head ==null){
-    return null;
-  }else {
-    while (current !=null&& current.next.value !=value) {
-      current=current.next;
-    }
-    newNode.next=current.next;
-    current.next= newNode;
-  }
-  String result = " insert before: "+ newNode.next.value+" the added node : "+newNode.value;
-  System.out.println(result);
-  return result;
-}
-public void insertAfter(int value, int newNum) {
-  Node newNode = new Node(newNum);
-  if (head == null) {
-    head = newNode;
-  } else {
+  public String insertBefore(int value, int newNum) {
+    Node newNode = new Node(newNum);
     Node current = head;
-    while (current != null) {
-      if (current.value == value) {
-        Node nextNode = current.next;
-        current.next = newNode;
-        newNode.next = nextNode;
+    if (head == null) {
+      return null;
+    } else {
+      while (current != null && current.next.value != value) {
+        current = current.next;
       }
-      current = current.next;
+      newNode.next = current.next;
+      current.next = newNode;
+    }
+    String result = " insert before: " + newNode.next.value + " the added node : " + newNode.value;
+    System.out.println(result);
+    return result;
+  }
+
+  public void insertAfter(int value, int newNum) {
+    Node newNode = new Node(newNum);
+    if (head == null) {
+      head = newNode;
+    } else {
+      Node current = head;
+      while (current != null) {
+        if (current.value == value) {
+          Node nextNode = current.next;
+          current.next = newNode;
+          newNode.next = nextNode;
+        }
+        current = current.next;
+      }
+    }
+
+  }
+
+  public String kLocation(int k) {
+    int x = 0;
+    if (head == null) {
+      return "Null";
+    } else {
+      ArrayList<Integer> kList = new ArrayList<>();
+      Node current = head;
+      while (current != null) {
+        kList.add(current.value);
+        current = current.next;
+        x++;
+      }
+      if (k < 0 || k > x) {
+        return "Exception";
+      }
+      System.out.println("the list :" + kList);
+      return "k[" + k + "] = " + kList.get((x - 1) - k);
+
     }
   }
 
-}
-public String kLocation(int k) {
-  int x = 0;
-  if (head == null) {
-    return "Null";
-   } else {
-    ArrayList<Integer> kList = new ArrayList<>();
-    Node current = head;
-    while (current != null) {
-      kList.add(current.value);
-      current = current.next;
-      x++;
+  public Node zipLists(LinkedList list1, LinkedList list2) {
+    if (list1.head == null) {
+      return list2.head;
+    } else if (list2.head == null) {
+      return list1.head;
+    } else {
+      Node current1 = list1.head;
+      Node current2 = list2.head;
+      Node first, second;
+      while (current1 != null && current2 != null) {
+        first=current1.next;
+        second=current2.next;
+
+        current2.next=first;
+        current1.next=current2;
+
+        current1=first;
+        current2=second;
+      }
+      return list1.head;
     }
-    if (k < 0 || k > x) {
-      return "Exception";
-    }
-    System.out.println("the list :"+kList);
-    return  "k["+k+"] = "+ kList.get((x - 1) - k);
 
   }
-}
 
-
+  public int getHead() {
+    return this.head.value;
+  }
 }

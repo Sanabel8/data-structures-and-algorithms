@@ -12,20 +12,27 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
-  @Test public void testInsert() {
+  @Test public void testInsertemptyLinked() {
+    LinkedList test = new LinkedList();
+    assertEquals("NULL", test.tostring());
+  }
+  @Test
+  public void testGetHead() {
+    LinkedList list = new LinkedList();
+    list.insert(4);
+    list.insert(44);
+    list.insert(444);
+    list.insert(4444);
+    assertEquals("4", list.getHead());
+    }
+
+  @Test public void testInsertMultipleNodes() {
     LinkedList test = new LinkedList();
     test.insert(5);
-    int data1 = 5;
-    assertNotNull(data1, test.insert(5));
+    test.insert(6);
+    test.insert(7);
+    assertEquals("{5} ->{6} ->{7} ->NULL", test.tostring());
   }
-  @Test  void testAdd() {
-    LinkedList test = new LinkedList();
-
-    test.add(5);
-    test.add(8);
-    assertNotNull(5,test.add(5));
-  }
-
   @Test  void testIncludes(){
     LinkedList test = new LinkedList();
     test.insert(14);
@@ -146,4 +153,37 @@ class AppTest {
     test1.insert(222);
     assertEquals("Exception",test1.kLocation(5));
   }
+//  @Test public void testZipList(){
+//    LinkedList test1 = new LinkedList();
+//    LinkedList test2 = new LinkedList();
+//    LinkedList ls3=App.zipLists(test1,test2);
+//
+//    test1.insert(2);
+//    test1.insert(1);
+//    test2.insert(5);
+//    test2.insert(7);
+//    test2.insert(6);
+//    assertEquals("eee",ls3.tostring());
+//    System.out.println(ls3.tostring());
+//
+//  }
+@Test
+public void testLinkedList_ziplist() {
+  LinkedList list = new LinkedList();
+  list.append(1);
+  list.append(2);
+  list.append(3);
+
+  LinkedList list2 = new LinkedList();
+  list2.append(4);
+  list2.append(5);
+  list2.append(6);
+
+  LinkedList mergeList = new LinkedList();
+  mergeList.head=mergeList.zipLists(list,list2);
+  String result = mergeList.tostring();
+  assertEquals("{1} ->{4} ->{2} ->{5} ->{3} ->{6} ->NULL",result.toString());
 }
+}
+
+

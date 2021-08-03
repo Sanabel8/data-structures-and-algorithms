@@ -72,6 +72,20 @@ Gig o/complexity for all method
   time : o(n)
 
 
+# Challenge Summary
+<!-- Description of the challenge -->
+Code Challenge: Class 08
+write method to Zip two linked lists ,and return a reference to the head of the zipped list.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[linked-list-zip](code-challenge5/linked-list-zip.jpg)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+  space: O(n)
+  time : o(n)
+
+
 
 
 
