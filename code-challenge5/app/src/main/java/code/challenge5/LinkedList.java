@@ -7,18 +7,11 @@ public class LinkedList {
   int size;
 
   //insert value to the end
-  public float insert(int value) {
-    Node addedNode = new Node(value);
-    Node current = this.head;
-    if (head == null) {
-      head = addedNode;
-    } else {
-      while (current.next != null) {
-        current = current.next;
-      }
-      current.next = addedNode;
-    }
-    return 0;
+  public String insert(int newNode) {
+    Node new_node = new Node(newNode);
+    new_node.next =head;
+    head =new_node;
+    return null;
   }
 
 
