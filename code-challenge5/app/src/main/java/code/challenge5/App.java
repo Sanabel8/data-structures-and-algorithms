@@ -67,6 +67,19 @@ public class App {
       String result = mergeList.tostring();
       System.out.println(result);
 
+      LinkedList mergeList1 = new LinkedList();
+      mergeList1.append(1);
+      mergeList1.append(11);
+      mergeList1.append(111);
+      mergeList1.append(11);
+      mergeList1.append(1);
+
+//      LinkedList newList = new LinkedList();
+//      boolean potato = newList.equality(testLL2);
+//      System.out.println(potato);
+
+      System.out.println("SSSSSSSSSS"+LinkedList.equality(mergeList1));
+
     }
 }
 
