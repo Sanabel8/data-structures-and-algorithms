@@ -22,3 +22,14 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
+
+                                                    
+ |code-challenges |         code                                                   |
+ |--------------- |----------------------------------------------------------------|
+ |code-challenge1 |   [array-reverse](challenge)                                   |
+ |code-challenge2 |   [array-insert-shift](challenge2)                             |
+ |code-challenge3 |   [array-binary-search](binary)                                |
+ |code5,6,7,8,9   |   [Linked-list](code-challenge5)                               | 
+ |code-challenge10|   [stack&queue](code-challenge10)                              | 
+
+

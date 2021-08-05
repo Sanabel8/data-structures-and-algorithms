@@ -32,8 +32,8 @@ public class App {
       test3.append(22);
       test3.append(222);
       test3.append(2222);
-      test3.insertBefore(222, 0);
-      System.out.println(test3.tostring());
+      test3.insertBefore(2, 0);
+      System.out.println("insert before"+test3.tostring());
 
       System.out.println("----------------------------------------------");
       LinkedList test2 = new LinkedList();
@@ -42,7 +42,7 @@ public class App {
       test2.append(222);
       test2.append(2222);
       test2.insertAfter(222, 0);
-      System.out.println(test2.tostring());
+      System.out.println("insert After"+test2.tostring());
 
       System.out.println("----------------------------------------------");
 

@@ -64,13 +64,13 @@ public class LinkedList {
     return value;
   }
 
-  public String insertBefore(int value, int newNum) {
+  public String insertBefore(int oldNum, int newNum) {
     Node newNode = new Node(newNum);
-    Node current = head;
+    Node current = this.head;
     if (head == null) {
-      return null;
+      return "";
     } else {
-      while (current != null && current.next.value != value) {
+      while (current != null && current.next.value != oldNum) {
         current = current.next;
       }
       newNode.next = current.next;
@@ -158,8 +158,8 @@ public class LinkedList {
     }
     for (int i = 0; i < list.size(); i++) {
       if (list.get(i) != list.get(list.size() - i-1)) {
-        System.out.println(list.get(i));
-        System.out.println(list.get(i+1));
+//        System.out.println(list.get(i));
+//        System.out.println("aaaaaaaaa"+list.get(i+1-1));
         return false;
       }
     }
