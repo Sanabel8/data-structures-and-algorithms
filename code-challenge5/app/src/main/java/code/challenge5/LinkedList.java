@@ -65,22 +65,22 @@ public class LinkedList {
   }
 
   public void insertBefore(int oldNum, int newNum) {
-    Node counter = head;
-    Node node = new Node(newNum);
+    Node placeHolder = head;
+    Node newNode  = new Node(newNum);
     length++;
 
-    while(counter.next != null){
+    while(placeHolder.next != null){
       if(head.value == oldNum){
-        node.next = head;
-        head = node;
+        newNode.next = head;
+        head = newNode;
         return;
       }
-      if(counter.next.value == oldNum){
-        node.next = counter.next;
-        counter.next = node;
+      if(placeHolder.next.value == oldNum){
+        newNode.next = placeHolder.next;
+        placeHolder.next = newNode;
         return;
       }
-      counter = counter.next;
+      placeHolder = placeHolder.next;
     }
   }
 
