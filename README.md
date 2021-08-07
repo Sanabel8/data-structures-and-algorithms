@@ -10,10 +10,10 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
                                                     
  |code-challenges |         code                                                   |
  |--------------- |----------------------------------------------------------------|
- |code-challenge1 |   [array-reverse](challenge)                                   |
+ |code-challenge1 |   [array-reverse](challenge/README.md)                         |
  |code-challenge2 |   [array-insert-shift](challenge2)                             |
- |code-challenge3 |   [array-binary-search](binary)                                |
+ |code-challenge3 |   [array-binary-search](binary/README.md)                      |
  |code5,6,7,8,9   |   [Linked-list](code-challenge5)                               | 
- |code-challenge10|   [stack&queue](code-challenge10)                              | 
+ |code-challenge10|   [stack&queue](stack-queue/README.md)                              | 
 
 
