@@ -16,6 +16,7 @@ class AppTest {
     LinkedList test = new LinkedList();
     assertEquals("NULL", test.tostring());
   }
+
   @Test public void testMultipleNodes() {
     LinkedList list = new LinkedList();
     list.insert(4);
@@ -112,6 +113,16 @@ class AppTest {
     test1.insertAfter(22,1);
     assertEquals("{2} ->{22} ->{1} ->{222} ->NULL",test1.tostring());
   }
+  //insert before first node
+  @Test void testinsertbeforefirstnode(){
+    LinkedList test1 = new LinkedList();
+    test1.append(2);
+    test1.append(22);
+    test1.append(222);
+    test1.append(2222);
+    test1.insertBefore(2,1);
+    assertEquals("{1} ->{2} ->{22} ->{222} ->{2222} ->NULL",test1.tostring());
+  }
   @Test void testappendAfterLastNode(){
     LinkedList test1 = new LinkedList();
     test1.append(2);
@@ -121,7 +132,6 @@ class AppTest {
     test1.insertAfter(2222,1);
     assertEquals("{2} ->{22} ->{222} ->{2222} ->{1} ->NULL",test1.tostring());
   }
-
   // for code challenge 7
   @Test public void testKLocationHappyPath(){
     LinkedList test1 = new LinkedList();

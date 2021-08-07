@@ -64,21 +64,24 @@ public class LinkedList {
     return value;
   }
 
-  public String insertBefore(int oldNum, int newNum) {
-    Node newNode = new Node(newNum);
-    Node current = this.head;
-    if (head == null) {
-      return "";
-    } else {
-      while (current != null && current.next.value != oldNum) {
-        current = current.next;
+  public void insertBefore(int oldNum, int newNum) {
+    Node counter = head;
+    Node node = new Node(newNum);
+    length++;
+
+    while(counter.next != null){
+      if(head.value == oldNum){
+        node.next = head;
+        head = node;
+        return;
       }
-      newNode.next = current.next;
-      current.next = newNode;
+      if(counter.next.value == oldNum){
+        node.next = counter.next;
+        counter.next = node;
+        return;
+      }
+      counter = counter.next;
     }
-    String result = " insert before: " + newNode.next.value + " the added node : " + newNode.value;
-    System.out.println(result);
-    return result;
   }
 
   public void insertAfter(int value, int newNum) {
