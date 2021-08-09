@@ -136,4 +136,32 @@ class AppTest {
     Queue<Character> queue = new Queue<>();
     assertNull(queue.front);
   }
-}
+
+  //cc12
+
+  @Test
+  public void enqueueAnimalShelterTestforcat() {
+    AnimalShelter shelterTest = new AnimalShelter();
+
+    shelterTest.enqueue(new Cat("looz"));
+    shelterTest.enqueue(new Cat("meghem"));
+    assertEquals("AnimalShelter{catQueue=FRONT -> { Animal{animalName='looz'} } -> { Animal{animalName='meghem'} } -> REAR, dogQueue=FRONT -> REAR}", shelterTest.toString());
+  }
+    @Test void enqueueAnimalShelterTestfordog(){
+      AnimalShelter shelterTest = new AnimalShelter();
+      shelterTest.enqueue(new Dog("husky"));
+    shelterTest.enqueue(new Dog("oklah"));
+    assertEquals("AnimalShelter{catQueue=FRONT -> REAR, dogQueue=FRONT -> { Animal{animalName='husky'} } -> { Animal{animalName='oklah'} } -> REAR}", shelterTest.toString());
+//    assertEquals("husky", shelterTest.dogQueue.peek().toString());
+    }
+
+  @Test void IsEmptyAnimalShelterTestfordog() {
+    AnimalShelter shelterTest = new AnimalShelter();
+//    assertFalse(shelterTest.catQueue.isEmpty());
+    assertEquals("AnimalShelter{catQueue=FRONT -> REAR, dogQueue=FRONT -> REAR}",shelterTest.toString());
+  }
+
+  }
+
+
+
