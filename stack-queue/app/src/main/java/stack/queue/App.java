@@ -33,6 +33,31 @@ public class App {
       queue.isEmpty();
       System.out.println("the dequeue node  "+queue.dequeue());
       System.out.println(queue.toString());
+
+      //cc1
+
+      PseudoQueue stack1 = new PseudoQueue();
+
+      stack1.enqueue(20);
+      stack1.enqueue(15);
+      stack1.enqueue(10);
+
+      System.out.println(stack1);
+
+
+      stack1.enqueue(5);
+      System.out.println(stack1);
+
+      System.out.println(stack1.dequeue());
+      System.out.println(stack1);
+
+      System.out.println(stack1.dequeue());
+      System.out.println(stack1);
+
+      stack1.enqueue(7);
+      System.out.println(stack1);
+
+
     }
 
 }
