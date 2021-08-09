@@ -59,3 +59,18 @@ Returns: Boolean indicating whether or not the queue is empty
 <!-- Description of each method publicly available to your Stack and Queue-->
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+
+
+# Challenge Summary
+<!-- Description of the challenge -->
+This challenge is about how to Implement a Queue using two Stacks, and apply enqueue and edqueue on it 
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[stack-queue-pseudo](stack-queue-pseudo.jpg)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+ Gig o/complexity
+ space: o(n)
+ time :  o(n)
+
