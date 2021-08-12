@@ -94,3 +94,21 @@ dequeue(String pref): This method accepts a String parameter and return Animal v
  Gig o/complexity
  space: o(n)
  time :  o(n)
+
+
+
+# Challenge Summary cc13
+# stack-queue-brackets
+<!-- Description of the challenge -->
+Multi-bracket Validation , Write a method called validate brackets that accepts a string parameter and return a boolean value representing whether or not the brackets in the string are balanced
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[stack-queue-brackets](stack-queue-brackets.jpg)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Gig o/complexity
+space: o(n)
+time :  o(n)
+
+* I took help from this resourse :https://www.youtube.com/watch?v=CCyEXcNamC4
