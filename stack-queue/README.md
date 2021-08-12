@@ -62,7 +62,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 
-# Challenge Summary
+# Challenge Summary cc11
 <!-- Description of the challenge -->
 This challenge is about how to Implement a Queue using two Stacks, and apply enqueue and edqueue on it 
 ## Whiteboard Process
@@ -77,3 +77,20 @@ This challenge is about how to Implement a Queue using two Stacks, and apply enq
 
 
 
+# Challenge Summary cc12 
+### stack-queue-animal-shelter
+<!-- Description of the challenge -->
+Create an AnimalShelter class that contains two queues the first one for cats and the second one for dogs. Also adds to the queues or removes from queues based on the pref type.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[stack-queue-animal-shelter](stack-queue-animal-shelter.jpg)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+## Methods
+enqueue(Animal animal): This method accepts A Animal parameter. It has if-else if- else statement to check the type of the animal to determine which queue it should add to.
+
+dequeue(String pref): This method accepts a String parameter and return Animal value. It has if-else if- else statement to compare the string parameter with the specific word to direct the removal process in which queue.
+
+ Gig o/complexity
+ space: o(n)
+ time :  o(n)
