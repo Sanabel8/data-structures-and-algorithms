@@ -34,7 +34,7 @@ public class App {
       System.out.println("the dequeue node  "+queue.dequeue());
       System.out.println(queue.toString());
 
-      //cc1
+      //cc11
 
       PseudoQueue stack1 = new PseudoQueue();
 
@@ -56,6 +56,7 @@ public class App {
 
       stack1.enqueue(7);
       System.out.println(stack1);
+
 
 
     }
