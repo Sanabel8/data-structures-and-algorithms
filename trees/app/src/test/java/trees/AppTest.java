@@ -91,4 +91,19 @@ class AppTest {
 
     assertEquals("11 => 8 => 22 => 7 => 1 => ",test.postOrder(test.root));
   }
+  @Test void treeMax(){
+    BinaryTree<Integer> test = new BinaryTree<>();
+    Node<Integer> root = new Node<Integer>(1);
+    Node<Integer> left = new Node<Integer>(8);
+    Node<Integer> right = new Node<Integer>(7);
+    Node<Integer> Lright = new Node<Integer>(11);
+    Node<Integer> Rleft = new Node<Integer>(22);
+    test.root = root ;
+    test.root.left = left ;
+    test.root.right = right ;
+    test.root.left.right = Lright ;
+    test.root.right.left = Rleft ;
+
+    assertEquals(22,test.findMaximaumValue(test.root));
+  }
 }

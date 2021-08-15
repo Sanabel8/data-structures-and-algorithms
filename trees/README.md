@@ -26,3 +26,31 @@ Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
 
 boolean contains(T value)
+
+# Challenge Summary cc16  Extending an Implementation
+<!-- Description of the challenge -->
+Find the maximum value stored in the binary tree.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[tree-max](trees/tree-max.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+space: o(n)
+time :  o(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+      BinaryTree bt = new BinaryTree();
+      //Add nodes to the binary tree
+      bt.root = new Node(20);
+      bt.root.left = new Node(25);
+      bt.root.right = new Node(54);
+      bt.root.left.left = new Node(74);
+      bt.root.right.left = new Node(85);
+      bt.root.right.right = new Node(22);
+
+      //Display largest node in the binary tree
+      System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
+      output = 85

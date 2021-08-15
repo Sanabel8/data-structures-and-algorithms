@@ -11,19 +11,7 @@ public class App {
     public static void main(String[] args) {
       System.out.println(new App().getGreeting());
 
-
-      BinaryTree binaryTree = new BinaryTree();
-//      System.out.println("before " + binaryTree);
-//      binaryTree.setRoot(new Node(1));
-//      binaryTree.getRoot().setLeft(new Node(2));
-//      binaryTree.getRoot().getLeft().setLeft(new Node(4));
-//      binaryTree.getRoot().getLeft().setRight(new Node(5));
-//      binaryTree.getRoot().getLeft().getRight().setLeft(new Node(6));
-//      binaryTree.getRoot().getLeft().getRight().setRight(new Node(7));
-//      binaryTree.getRoot().setRight(new Node(3));
-//      binaryTree.getRoot().getRight().setRight(new Node(8));
-////        binaryTree.getRoot().getRight().getRight().setRight(new Node(10));
-//      binaryTree.getRoot().getRight().getRight().setLeft(new Node(9));
+// code 15
       BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<Integer>();
       Node<Integer> root = new Node<>(8);
       Node<Integer> n1 = new Node<>(2);
@@ -46,18 +34,25 @@ public class App {
       binarySearchTree.add(6);
       binarySearchTree.add(12);
       binarySearchTree.add(18);
-//      binarySearchTree.contains(5);
-//      binarySearchTree.contains(15);
-//      binarySearchTree.contains(25);
-//      binarySearchTree.contains(17);
-//      binarySearchTree.contains(6);
-
       System.out.println(binarySearchTree.inOrder(root));
-      System.out.println("-----------");
       System.out.println(binarySearchTree.contains(5));
       System.out.println(binarySearchTree.contains(17));
       System.out.println(binarySearchTree.contains(12));
       System.out.println(binarySearchTree.contains(4));
+
+      // code 16
+
+      BinaryTree bt = new BinaryTree();
+      //Add nodes to the binary tree
+      bt.root = new Node(20);
+      bt.root.left = new Node(25);
+      bt.root.right = new Node(54);
+      bt.root.left.left = new Node(74);
+      bt.root.right.left = new Node(85);
+      bt.root.right.right = new Node(22);
+
+      //Display largest node in the binary tree
+      System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
     }
 
 }
