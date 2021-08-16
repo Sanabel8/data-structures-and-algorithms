@@ -40,7 +40,6 @@ public class App {
       System.out.println(binarySearchTree.contains(12));
       System.out.println(binarySearchTree.contains(4));
 
-      // code 16
 
       BinaryTree bt = new BinaryTree();
       //Add nodes to the binary tree
@@ -53,7 +52,8 @@ public class App {
 
       //Display largest node in the binary tree
       System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
-//bt.treeBreadthFirst(root);
+
+      System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
 
     }
 

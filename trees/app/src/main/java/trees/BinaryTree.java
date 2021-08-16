@@ -81,26 +81,46 @@ public class BinaryTree<T> {
 
   //cc17
 
-  public ArrayList treeBreadthFirst(BinaryTree<T> binaryTree){
-   if(binaryTree.root == null){
-     return null;
-     }
-    List<T> list = new ArrayList<>();
-    Queue<T> queue = new LinkedList<>();
-    queue.add((T) binaryTree.root);
-    while (!queue.isEmpty()){
-      Node currentNode = (Node) queue.peek();
-//      System.out.print(tempNode.data);
-      System.out.print(currentNode.data + " ");
-      if (currentNode.left != null) {
-        queue.add((T) currentNode.left);
+//  public ArrayList treeBreadthFirst(BinaryTree<T> binaryTree){
+//   if(binaryTree.root == null){
+//     return null;
+//     }
+//    List<T> list = new ArrayList<>();
+//    Queue<T> queue = new LinkedList<>();
+//    queue.add((T) binaryTree.root);
+//    while (!queue.isEmpty()){
+//      Node currentNode = (Node) queue.peek();
+////      System.out.print(tempNode.data);
+//      System.out.print(currentNode.data + " ");
+//      if (currentNode.left != null) {
+//        queue.add((T) currentNode.left);
+//      }
+//      if (currentNode.right != null) {
+//        queue.add((T) currentNode.right);
+//      }
+//      list.add(queue.peek());
+//    }
+//    return (ArrayList) list;
+//  }
+  public LinkedList<Node> linkedList = new LinkedList<>();
+  public  ArrayList<Integer> list = new ArrayList<>();
+
+  public ArrayList<Integer> breadthFirst(BinaryTree tree) {
+    if (root != null) {
+      linkedList.add(tree.root);
+      while (!linkedList.isEmpty()) {
+        Node node = linkedList.remove();
+        list.add(node.data);
+
+        if (node.left != null) {
+          linkedList.add(node.left);
+        }
+        if (node.right != null) {
+          linkedList.add(node.right);
+        }
       }
-      if (currentNode.right != null) {
-        queue.add((T) currentNode.right);
-      }
-      list.add(queue.peek());
     }
-    return (ArrayList) list;
+    return list;
   }
 
   @Override
