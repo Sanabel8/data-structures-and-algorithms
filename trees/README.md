@@ -54,3 +54,21 @@ time :  o(n)
       //Display largest node in the binary tree
       System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
       output = 85
+
+
+      
+# Challenge Summary cc17  tree-breadth-first
+<!-- Description of the challenge -->
+Traverse the input tree using a Breadth-first approach
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[tree-breadth-first](trees/Breadth-first.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+space: o(n)
+time :  o(n)
+
+
+      
