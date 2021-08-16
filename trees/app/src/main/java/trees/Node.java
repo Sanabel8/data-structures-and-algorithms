@@ -5,11 +5,16 @@ public class Node<T> {
  Node <T> left;
  Node <T> right;
  int data;
+  Node<T> next;
+
 
   public Node(T value) {
     this.value = value;
     this.data = data;
-  }
 
+  }
+  public T getValue() {
+    return value;
+  }
 
 }

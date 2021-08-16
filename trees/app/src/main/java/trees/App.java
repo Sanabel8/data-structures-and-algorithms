@@ -53,6 +53,8 @@ public class App {
 
       //Display largest node in the binary tree
       System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
+//bt.treeBreadthFirst(root);
+
     }
 
 }
