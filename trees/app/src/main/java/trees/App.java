@@ -53,8 +53,15 @@ public class App {
       //Display largest node in the binary tree
       System.out.println("maximum node is: " + bt.findMaximaumValue(bt.root));
 
+      System.out.println(".........cc17...............");
+
       System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
 
+      System.out.println(".........cc18...............");
+
+     TreeFizzBuzz treeFizzBuzz = new TreeFizzBuzz();
+      treeFizzBuzz.fizzBuzzTree(10);
+//      System.out.print(treeFizzBuzz.fizzBuzzTree(100));
     }
 
 }

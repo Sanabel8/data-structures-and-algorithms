@@ -106,4 +106,13 @@ class AppTest {
 
     assertEquals(22,test.findMaximaumValue(test.root));
   }
+  @Test void testFizzBuzzTree(){
+    TreeFizzBuzz treeFizzBuzz = new TreeFizzBuzz();
+//    assertEquals("1 \n" +
+//      "2 \n" +
+//      "Fizz \n" +
+//      "4 \n" +
+//      "\n",treeFizzBuzz.fizzBuzzTree(5));
+    assertNotNull(treeFizzBuzz.fizzBuzzTree(5));
+  }
 }
