@@ -20,6 +20,6 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
  |code-challenge13|   [stack-queue-brackets](stack-queue/README.md)                | 
  |code-challenge15|   [trees](trees/README.md)                                     | 
  |code-challenge16|   [tree-max](trees/README.md)                                  | 
- |code-challenge17|   []()                                                         | 
+ |code-challenge17|   [tree-breadth-first](trees/README.md)                        | 
 
 
