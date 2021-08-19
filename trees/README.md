@@ -62,7 +62,7 @@ time :  o(n)
 Traverse the input tree using a Breadth-first approach
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[tree-breadth-first](trees/Breadth-first.jpg)
+[tree-breadth-first](trees/breadth-first-tree.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
