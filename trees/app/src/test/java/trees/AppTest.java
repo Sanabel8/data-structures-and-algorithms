@@ -5,6 +5,8 @@ package trees;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -34,10 +36,10 @@ class AppTest {
     Node<Integer> root = new Node<Integer>(1);
     Node<Integer> left = new Node<Integer>(8);
     Node<Integer> right = new Node<Integer>(7);
-    test.root = root ;
-    test.root.left = left ;
-    test.root.right = right ;
-    assertEquals("8=>1=>7=>",test.inOrder(test.root));
+    test.root = root;
+    test.root.left = left;
+    test.root.right = right;
+    assertEquals("8=>1=>7=>", test.inOrder(test.root));
   }
 
   @Test
@@ -48,13 +50,13 @@ class AppTest {
     Node<Integer> right = new Node<Integer>(7);
     Node<Integer> Lright = new Node<Integer>(11);
     Node<Integer> Rleft = new Node<Integer>(22);
-    test.root = root ;
-    test.root.left = left ;
-    test.root.right = right ;
-    test.root.left.right = Lright ;
-    test.root.right.left = Rleft ;
+    test.root = root;
+    test.root.left = left;
+    test.root.right = right;
+    test.root.left.right = Lright;
+    test.root.right.left = Rleft;
 
-    assertEquals("1 => 8 => 11 => 7 => 22 => ",test.preOrder(test.root));
+    assertEquals("1 => 8 => 11 => 7 => 22 => ", test.preOrder(test.root));
   }
 
   @Test
@@ -65,13 +67,13 @@ class AppTest {
     Node<Integer> right = new Node<Integer>(7);
     Node<Integer> Lright = new Node<Integer>(11);
     Node<Integer> Rleft = new Node<Integer>(22);
-    test.root = root ;
-    test.root.left = left ;
-    test.root.right = right ;
-    test.root.left.right = Lright ;
-    test.root.right.left = Rleft ;
+    test.root = root;
+    test.root.left = left;
+    test.root.right = right;
+    test.root.left.right = Lright;
+    test.root.right.left = Rleft;
 
-    assertEquals("8=>11=>1=>22=>7=>",test.inOrder(test.root));
+    assertEquals("8=>11=>1=>22=>7=>", test.inOrder(test.root));
   }
 
 
@@ -83,28 +85,62 @@ class AppTest {
     Node<Integer> right = new Node<Integer>(7);
     Node<Integer> Lright = new Node<Integer>(11);
     Node<Integer> Rleft = new Node<Integer>(22);
-    test.root = root ;
-    test.root.left = left ;
-    test.root.right = right ;
-    test.root.left.right = Lright ;
-    test.root.right.left = Rleft ;
+    test.root = root;
+    test.root.left = left;
+    test.root.right = right;
+    test.root.left.right = Lright;
+    test.root.right.left = Rleft;
 
-    assertEquals("11 => 8 => 22 => 7 => 1 => ",test.postOrder(test.root));
+    assertEquals("11 => 8 => 22 => 7 => 1 => ", test.postOrder(test.root));
   }
-  @Test void treeMax(){
+
+  @Test
+  void treeMax() {
     BinaryTree<Integer> test = new BinaryTree<>();
     Node<Integer> root = new Node<Integer>(1);
     Node<Integer> left = new Node<Integer>(8);
     Node<Integer> right = new Node<Integer>(7);
     Node<Integer> Lright = new Node<Integer>(11);
     Node<Integer> Rleft = new Node<Integer>(22);
-    test.root = root ;
-    test.root.left = left ;
-    test.root.right = right ;
-    test.root.left.right = Lright ;
-    test.root.right.left = Rleft ;
+    test.root = root;
+    test.root.left = left;
+    test.root.right = right;
+    test.root.left.right = Lright;
+    test.root.right.left = Rleft;
 
-    assertEquals(22,test.findMaximaumValue(test.root));
+    assertEquals(22, test.findMaximaumValue(test.root));
+  }
+
+  @Test
+  void teccstBreadthFirstTree() {
+    BinaryTree<Integer> test = new BinaryTree<>();
+    Node root = new Node(1);
+    root.left = new Node(5);
+    root.right = new Node(10);
+    root.left.right = new Node(55);
+    root.right.left = new Node(77);
+    ArrayList<Integer> list = new ArrayList();
+    list.add(5);
+    list.add(7);
+    list.add(3);
+    list.add(14);
+    list.add(8);
+    assertEquals(list, test.findMaximaumValue(root));
+  }
+  @Test public void testBreadthFirstTree(){
+    BinaryTree test = new BinaryTree();
+    Node root = new Node(1);
+    root.left = new Node(11);
+    root.left.left = new Node(111);
+    root.right = new Node(22);
+    root.right.right = new Node(14);
+    ArrayList<Integer> list = new ArrayList();
+    list.add(1);
+    list.add(11);
+    list.add(22);
+    list.add(111);
+    list.add(14);
+    assertEquals( list, test.breadthFirstTree(root));
   }
   @Test void testFizzBuzzTree(){
     TreeFizzBuzz treeFizzBuzz = new TreeFizzBuzz();
