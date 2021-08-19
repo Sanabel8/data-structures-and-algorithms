@@ -3,15 +3,20 @@ import java.util.ArrayList;
 
 public class LinkedList {
   Node head;
+  Node tail;
   private int length;
   int size;
 
-  //insert value to the end
-  public String insert(int newNode) {
+  //insert value to the first
+  public void insert(int value) {
     Node new_node = new Node(newNode);
-    new_node.next =head;
-    head =new_node;
-    return null;
+    if(head == null){
+      head =new_node;
+      tail = head;
+    }else{
+      new_node.next =head;
+      head =new_node;
+    }
   }
 
 

@@ -6,18 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="09b9554d-073e-4206-8bd4-a09b162f477a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/app/src/main/java/code/challenge10/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code-challenge10/app/src/test/java/code/challenge10/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code-challenge10/app/src/test/java/code/challenge10/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/code/challenge5/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/code/challenge5/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stack-queue/app/src/main/java/stack/queue/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-queue/app/src/main/java/stack/queue/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">

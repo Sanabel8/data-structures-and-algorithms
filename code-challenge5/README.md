@@ -61,9 +61,9 @@ insertBefore method : make method to adds a new node with the given new value im
 insert after method: make method adds a new node with the given new value immediately after the first node that has the value specified
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[append](append.jpg)
-[insert-before](insertBefor.jpg)
-[insertAfter](insertAfter.jpg)
+[append](code-challenge5/append.jpg)
+[insert-before](code-challenge5/insertBefor.jpg)
+[insertAfter](code-challenge5/insertAfter.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
