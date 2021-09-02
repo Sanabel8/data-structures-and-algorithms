@@ -21,5 +21,10 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
  |code-challenge15|   [trees](trees/README.md)                                     | 
  |code-challenge16|   [tree-max](trees/README.md)                                  | 
  |code-challenge17|   [tree-breadth-first](trees/README.md)                        | 
+ |code-challenge26|   [insertSort](insertSort/README.md)                           | 
+ |code-challenge27|   [merge-sort](mergeSort/README .md)                           | 
+ |code-challenge28|   [quick-sort](Quick-Sort/README.md)                           | 
+ |code-challenge29|   []()                                                   | 
+ |code-challenge30|   [Hash Table Implementation]()                          | 
 
 

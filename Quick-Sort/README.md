@@ -1,21 +1,20 @@
 # Quick Sort - Code Challenge: Class 28
 
 # Challenge Summary
-
 <!-- Description of the challenge -->
 
 QuickSort is a Divide and Conquer algorithm. It choose an element as center and devided the given array around the choose center.
 
 ## Whiteboard Process
-
 <!-- Embedded whiteboard image -->
 
-![]()
+![quick-sort](Quick-Sort/quickStor.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-
+Gig o/complexity
+space: o(n)
+time :O(n)
 ## Solution
 
 <!-- Show how to run your code, and examples of it in action -->
