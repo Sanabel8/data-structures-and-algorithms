@@ -1,7 +1,7 @@
 # Code Challenge: Class 28 -Quick Sort
 
-# passes ![quick-sort](Quick-Sort/blog.jpg)
-
+# passes
+ ![quick-sort](Quick-Sort/blog.jpg)
 # Pseudo Code
 
 ```ALGORITHM QuickSort(arr, left, right)
