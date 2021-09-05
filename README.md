@@ -24,7 +24,11 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
  |code-challenge26|   [insertSort](insertSort/README.md)                           | 
  |code-challenge27|   [merge-sort](mergeSort/README .md)                           | 
  |code-challenge28|   [quick-sort](Quick-Sort/README.md)                           | 
- |code-challenge29|   []()                                                   | 
- |code-challenge30|   [Hash Table Implementation]()                          | 
+ |code-challenge29|   [](hash-tables/README.md)                                    | 
+ |code-challenge30|   [Hash Table Implementation]()                                | 
+ |code-challenge31|   [repeating-world](repeateWord/README.md)                     | 
+ |code-challenge32|   []()                                                         | 
+ |code-challenge33|   []()                                                         | 
+ |code-challenge34|   []()                                                         | 
 
 
