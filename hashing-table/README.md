@@ -32,9 +32,22 @@ offers fast insertion and searching capabilities.
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-Gig o/complexity
+add Gig o/complexity
 space: o(n)
 time :O(n)
+
+get Gig o/complexity 
+space: o(n)
+time :O(n)
+
+hash Gig o/complexity 
+space: o(n)
+time :O(n)
+
+contais Gig o/complexity
+space: o(n)
+time :O(n)
+
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
