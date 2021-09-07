@@ -9,7 +9,7 @@ public class LinkedList {
 
   //insert value to the first
   public void insert(int value) {
-    Node new_node = new Node(newNode);
+    Node new_node = new Node(value);
     if(head == null){
       head =new_node;
       tail = head;
