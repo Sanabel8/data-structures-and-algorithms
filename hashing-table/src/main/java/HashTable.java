@@ -3,10 +3,10 @@ import java.util.List;
 import java.util.Objects;
 
 public class HashTable<K, V> {
-
   private List<Node<K, V>> list;
-   int buckets;
-   int size;
+  int buckets;
+  int size;
+
   public HashTable() {
     list = new ArrayList<>();
     buckets = 10;
@@ -19,7 +19,8 @@ public class HashTable<K, V> {
   public int hash(K key) {
     return Objects.hash(key);
   }
-//i is index
+
+  //i is index
   private int haveI(K key) {
     int hash = hash(key);
     int i = hash % buckets;
@@ -83,12 +84,28 @@ public class HashTable<K, V> {
   }
 
   public boolean contains(K key) {
-    if (key == null){
+    if (key == null) {
       throw new IllegalArgumentException("null");
     }
     return get(key) != null;
 
 
   }
+  public int getSize() {
+    return size;
+  }
 
+  public boolean isEmpty() {
+    return getSize() == 0;
+  }
+
+
+  @Override
+  public String toString() {
+    return "HashTable{" +
+      "list=" + list +
+      ", buckets=" + buckets +
+      ", size=" + size +
+      '}';
+  }
 }

@@ -5,8 +5,55 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
+  @Test
+  public void testHash() {
+    HashTable<String, Integer> books = new HashTable<>();
+    books.add("The Great Gatsby", 2);
+    books.add("Passage to India", 5);
+    books.add("Beloved", 7);
+    books.add("To Kill a Mockingbird", 9);
+
+    assertEquals(4, books.getSize());
+
+  }
+
+  @Test
+  public void testHash2() {
+    HashTable<String, Integer> books = new HashTable<>();
+    books.add("The Great Gatsby", 2);
+    books.add("Passage to India", 5);
+    books.add("Beloved", 7);
+    books.add("To Kill a Mockingbird", 9);
+
+    assertFalse( books.isEmpty());
+  }
+
+  @Test
+  public void testHash3() {
+    HashTable<String, Integer> books = new HashTable<>();
+    assertTrue( books.isEmpty());
+  }
+
+  @Test
+  public void testHash4() {
+    HashTable<String, Integer> books = new HashTable<>();
+    books.add("The Great Gatsby", 2);
+    books.add("Passage to India", 5);
+    books.add("Beloved", 7);
+    books.add("To Kill a Mockingbird", 9);
+
+    assertTrue( books.contains("Beloved"));
+
+  }
+  @Test
+  public void testHash5() {
+    HashTable<String, Integer> books = new HashTable<>();
+    books.add("The Great Gatsby", 2);
+    books.add("Passage to India", 5);
+    books.add("Beloved", 7);
+    books.add("To Kill a Mockingbird", 9);
+
+    assertFalse( books.contains("sanabel"));
+
+  }
 }
