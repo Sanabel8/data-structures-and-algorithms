@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LibraryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-09-07T16:34:39" hostname="DESKTOP-N63AM12" time="0.004">
+  <properties/>
+  <testcase name="testHash2" classname="LibraryTest" time="0.004"/>
+  <testcase name="testHash3" classname="LibraryTest" time="0.0"/>
+  <testcase name="testHash4" classname="LibraryTest" time="0.0"/>
+  <testcase name="testHash5" classname="LibraryTest" time="0.0"/>
+  <testcase name="testHash" classname="LibraryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

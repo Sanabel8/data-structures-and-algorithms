@@ -13,7 +13,7 @@ public class App {
       LinkedList test = new LinkedList();
       test.insert(1);
       test.insert(66);
-      System.out.println(test.insert(11));
+//      System.out.println(test.insert(11));
 
       test.includes(5);
       test.tostring();
@@ -49,7 +49,7 @@ public class App {
       test.kLocation(3);
       System.out.println(test.kLocation(3));
 
-      System.out.println("----------------------------------------------");
+      System.out.println("-merging---------------------------------------------");
       LinkedList list4=new LinkedList();
       LinkedList list5=new LinkedList();
       LinkedList mergList=new LinkedList();
