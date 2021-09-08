@@ -2,8 +2,9 @@ public class Node<K, V> {
   K key;
   V value;
 
-  final int hashCode;
-
+  int key2;
+  Node left, right;
+  int hashCode;
   Node<K, V> next;
 
   public Node(K key, V value, int hashCode) {
@@ -12,5 +13,28 @@ public class Node<K, V> {
     this.hashCode = hashCode;
   }
 
+  public Node(V value) {
+    this.value = value;
+  }
 
+  public Node(Node left, Node right) {
+    this.left = left;
+    this.right = right;
+  }
+
+  public Node getLeft() {
+    return left;
+  }
+
+  public void setLeft(Node left) {
+    this.left = left;
+  }
+
+  public Node getRight() {
+    return right;
+  }
+
+  public void setRight(Node right) {
+    this.right = right;
+  }
 }
