@@ -1,4 +1,4 @@
-# Hashtables
+# Hashtables cc30
 
 <!-- Short summary or background information -->
 
@@ -69,29 +69,83 @@ time :O(n)
    System.out.println("false: because the book not added ...."+books.contains("Anna Karenina"));
    System.out.println("true: because the book is added ...."+books.contains("Beloved"));
 ```
+
 results:
- hash : -1637176399
+hash : -1637176399
 get value after added: 2
 false: because the book not added ....false
 true: because the book is added ....true
 
-
-
 # Features
+
 # add
+
 Arguments: key, value
 Returns: nothing
 This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
 
 # get
+
 Arguments: key
 Returns: Value associated with that key in the table
 
 # contains
+
 Arguments: key
 Returns: Boolean, indicating if the key exists in the table already.
 
 # hash
+
 Arguments: key
 Returns: Index in the collection for that key
 
+
+# Challenge Summary -cc32 -hashmap-tree-intersection
+
+<!-- Description of the challenge -->
+Find common values in 2 binary trees. In other words, find intersection of two BSTs.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![insertion-binarytree](hashing-table/insertion-binarytree.jpg)
+
+## Approach & Efficiency
+
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Gig o/complexity for insertion method 
+space: o(n)
+time :O(n^2)
+
+
+Gig o/complexity for preOrdeMethod 
+space: o(n)
+time :O(1)
+
+## Solution
+
+<!-- Show how to run your code, and examples of it in action -->
+
+```Node root = new Node(2,55,1);
+    root = new Node(9,8,7);
+    root.left = new Node(1,4,5);
+   root.right = new Node(54,45,10);
+    root.left.left = new Node(1,45,0);
+    root.right.left = new Node(4,5,6);
+    root.right.right = new Node(5,76,1);
+
+
+    BinaryTrees binaryTrees = new BinaryTrees(root);
+    BinaryTrees bt = new BinaryTrees();
+    //Add nodes to the binary tree
+    bt.root = new Node(20,4,2);
+    bt.root.left = new Node(25,5,6);
+    bt.root.right = new Node(54,45,10);
+    bt.root.left.left = new Node(74,60,1);
+    bt.root.right.left = new Node(85,99,3);
+    bt.root.right.right = new Node(22,76,4);
+
+   System.out.println(HashTable.insertionMethod(binaryTrees, bt));
+```
+
+results:  [4, 5, 45, 76]

@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -89,8 +90,8 @@ public class HashTable<K, V> {
     }
     return get(key) != null;
 
-
   }
+
   public int getSize() {
     return size;
   }
@@ -100,6 +101,28 @@ public class HashTable<K, V> {
   }
 
 
+  public static ArrayList<String> insertionMethod(BinaryTrees binary1, BinaryTrees binary2) {
+
+    if (binary1.root == null || binary2.root == null) {
+      System.out.println("null");
+      return null;
+    }
+    List<Integer> arr1 = (ArrayList<Integer>) binary1.preOrdeMethod(binary1.root);
+    List<Integer> arr2 = (ArrayList<Integer>) binary2.preOrdeMethod(binary2.root);
+
+    List<String> list = new ArrayList<>();
+    List<String> list2 = new ArrayList<>();
+    for (Integer element : arr1) {
+      list.add(element.toString());
+    }
+    for (Integer element : arr2) {
+      if (list.contains(element.toString())) {
+        list2.add(element.toString());
+      }
+    }
+    System.out.println(list2);
+    return (ArrayList<String>) list2;
+  }
   @Override
   public String toString() {
     return "HashTable{" +
@@ -108,4 +131,6 @@ public class HashTable<K, V> {
       ", size=" + size +
       '}';
   }
+
+
 }

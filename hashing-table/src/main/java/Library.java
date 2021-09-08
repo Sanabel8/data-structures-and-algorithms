@@ -17,6 +17,32 @@ public class Library {
 
     System.out.println("false: because the book not added ...."+books.contains("Anna Karenina"));
     System.out.println("true: because the book is added ...."+books.contains("Beloved"));
+
+
+
+////////////////////////////cc32 - insertion ////////////////////////
+
+    Node root = new Node(2,55,1);
+    root = new Node(9,8,7);
+    root.left = new Node(1,4,5);
+    root.right = new Node(54,45,10);
+    root.left.left = new Node(1,45,0);
+    root.right.left = new Node(4,5,6);
+    root.right.right = new Node(5,76,1);
+    root.right.right.right= new Node(5,100,1);
+
+    BinaryTrees binaryTrees = new BinaryTrees(root);
+    BinaryTrees bt = new BinaryTrees();
+    //Add nodes to the binary tree
+    bt.root = new Node(20,4,2);
+    bt.root.left = new Node(25,5,6);
+    bt.root.right = new Node(54,45,10);
+    bt.root.left.left = new Node(74,1,1);
+    bt.root.right.left = new Node(85,99,3);
+    bt.root.right.right = new Node(22,76,4);
+    bt.root.right.right.left = new Node(22,100,4);
+
+    System.out.println(HashTable.insertionMethod(binaryTrees, bt));
   }
 
 }
