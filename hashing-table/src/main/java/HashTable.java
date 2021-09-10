@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -123,6 +124,7 @@ public class HashTable<K, V> {
     System.out.println(list2);
     return (ArrayList<String>) list2;
   }
+
   @Override
   public String toString() {
     return "HashTable{" +
@@ -133,4 +135,21 @@ public class HashTable<K, V> {
   }
 
 
+  //////////////////////// cc33//////////////////////
+
+  public static List<String> leftJoin(HashMap hashMap1, HashMap hashMap2) {
+
+    List<String> list = new ArrayList<>();
+    for (Object h : hashMap1.keySet()) {
+      if (hashMap1.containsKey(h)) {
+        list.add(h + ": " + "[ " + hashMap1.get(h) + ", " + hashMap2.get(h) + " ]");
+      } else {
+        list.add(h + ": " + hashMap1.get(h) + ", " + null);
+      }
+    }
+
+    return list;
+
+
+  }
 }
