@@ -99,26 +99,27 @@ Returns: Boolean, indicating if the key exists in the table already.
 Arguments: key
 Returns: Index in the collection for that key
 
-
 # Challenge Summary -cc32 -hashmap-tree-intersection
 
 <!-- Description of the challenge -->
+
 Find common values in 2 binary trees. In other words, find intersection of two BSTs.
 
 ## Whiteboard Process
+
 <!-- Embedded whiteboard image -->
+
 ![insertion-binarytree](hashing-table/insertion-binarytree.jpg)
 
 ## Approach & Efficiency
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-Gig o/complexity for insertion method 
+Gig o/complexity for insertion method
 space: o(n)
 time :O(n^2)
 
-
-Gig o/complexity for preOrdeMethod 
+Gig o/complexity for preOrdeMethod
 space: o(n)
 time :O(1)
 
@@ -148,4 +149,57 @@ time :O(1)
    System.out.println(HashTable.insertionMethod(binaryTrees, bt));
 ```
 
-results:  [4, 5, 45, 76]
+results: [4, 5, 45, 76]
+
+# Hashmap LEFT JOIN -cc33
+
+<!-- Short summary or background information -->
+
+Implement a simplified LEFT JOIN for 2 Hashmaps.
+
+## Challenge
+
+<!-- Description of the challenge -->
+
+![Hashmap LEFT JOIN](hashing-table/hash-left-join.jpg)
+
+## Approach & Efficiency
+
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Gig o/complexity
+space: o(n)
+time :O(n)
+
+## Solution
+
+<!-- Embedded whiteboard image -->
+
+```HashMap<String, String> hashMap1 = new HashMap<>();
+      HashMap<String, String> hashMap2 = new HashMap<>();
+
+    hashMap1.put("fond", "enamored");
+    hashMap1.put("wrath", "anger");
+    hashMap1.put("diligent", "employed");
+    hashMap1.put("outfit", "garb");
+    hashMap1.put("guide", "usher");
+
+    hashMap2.put("fond", "averse");
+    hashMap2.put("wrath", "delight");
+    hashMap2.put("diligent", "idle");
+    hashMap2.put("guide", "follow");
+    hashMap2.put("flow", "jam");
+
+      System.out.println(books.leftJoin(hashMap1,hashMap2));
+
+```
+the result: [diligent: [ employed, idle ], outfit: [ garb, null ], wrath: [ anger, delight ], guide: [ usher, follow ], fond: [ enamored, averse ]]
+
+## Feature Tasks
+* Write a function that LEFT JOINs two hashmaps into a single data structure.
+* Write a function called left join
+* Arguments: two hash maps
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+* Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
+
