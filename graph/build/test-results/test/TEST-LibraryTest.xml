@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LibraryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-09-10T12:26:18" hostname="DESKTOP-N63AM12" time="0.005">
+<testsuite name="LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-12T13:25:28" hostname="DESKTOP-N63AM12" time="0.003">
   <properties/>
-  <testcase name="testSizeOfgraph3" classname="LibraryTest" time="0.003"/>
-  <testcase name="testEmptygraph" classname="LibraryTest" time="0.0"/>
-  <testcase name="testAddVertexTograph1" classname="LibraryTest" time="0.0"/>
-  <testcase name="testAddEdgeTograph4" classname="LibraryTest" time="0.001"/>
-  <testcase name="testGetNighborsgraph5" classname="LibraryTest" time="0.0"/>
+  <testcase name="testgraphBreadthFirst2" classname="LibraryTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

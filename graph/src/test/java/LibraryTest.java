@@ -70,7 +70,53 @@ public class LibraryTest {
     graph.addEdge("sanabel", "yasmeen");
 
     assertEquals("[Vertex{value='kamleh'}, Vertex{value='yasmeen'}]",graph.getNeighborsForVertex("sanabel").toString());
-
-
   }
+
+  ////////////////////////cc36//////////////////////////////
+  @Test
+  public void testgraphBreadthFirst(){
+    Graph graph = new Graph();
+
+    graph.addVertex("Pandora");
+    graph.addVertex("Arendelle");
+    graph.addVertex("Metroville");
+    graph.addVertex("Monstroplolis");
+    graph.addVertex("Narnia");
+    graph.addVertex("Naboo");
+
+    graph.addEdge("Pandora", "Arendelle");
+    graph.addEdge("Arendelle", "Metroville");
+    graph.addEdge("Arendelle", "Monstroplolis");
+    graph.addEdge("Metroville", "Narnia");
+    graph.addEdge("Monstroplolis", "Metroville");
+    graph.addEdge("Naboo", "Narnia");
+    graph.addEdge("Naboo", "Metroville");
+    graph.addEdge("Naboo", "Monstroplolis");
+
+    assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]",graph.graphBreadthFirst(graph,"Pandora").toString());
+  }
+
+  @Test
+  public void testgraphBreadthFirst2(){
+    Graph graph = new Graph();
+
+    graph.addVertex("Pandora");
+    graph.addVertex("Arendelle");
+    graph.addVertex("Metroville");
+    graph.addVertex("Monstroplolis");
+    graph.addVertex("Narnia");
+    graph.addVertex("Naboo");
+
+    graph.addEdge("Pandora", "Arendelle");
+    graph.addEdge("Arendelle", "Metroville");
+    graph.addEdge("Arendelle", "Monstroplolis");
+    graph.addEdge("Metroville", "Narnia");
+//    graph.addEdge("Monstroplolis", "Metroville");
+//    graph.addEdge("Naboo", "Narnia");
+//    graph.addEdge("Naboo", "Metroville");
+//    graph.addEdge("Naboo", "Monstroplolis");
+
+    assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia]",graph.graphBreadthFirst(graph,"Pandora").toString());
+  }
+
 }
