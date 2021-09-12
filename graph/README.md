@@ -7,7 +7,6 @@ A graph is a data structure that consists of the following two components:
 1. A finite set of vertices also called as nodes.
 2. A finite set of ordered pair of the form (u, v) called as edge.
 
-
 ## Features
 
 The graph should be represented as an adjacency list, and should include the following methods:
@@ -75,11 +74,65 @@ time :O(n)
       System.out.println(" get the Neighbors in graph: "+graph.getNeighborsForVertex("ahmad"));
 ```
 
-the results:  
+the results:
 
 print vertex in the graph: {Vertex{value='tareq'}=[Vertex{value='ahmad'}, Vertex{value='yasmeen'}], Vertex{value='jamal'}=[Vertex{value='kamleh'}], Vertex{value='yasmeen'}=[Vertex{value='sanabel'}, Vertex{value='ahmad'}, Vertex{value='tareq'}], Vertex{value='kamleh'}=[Vertex{value='jamal'}, Vertex{value='sanabel'}], Vertex{value='sanabel'}=[Vertex{value='kamleh'}, Vertex{value='yasmeen'}], Vertex{value='ahmad'}=[Vertex{value='tareq'}, Vertex{value='yasmeen'}]}
- size (num of vertex ) in graph: 6
- get the Neighbors in graph: [Vertex{value='kamleh'}]
- get the Neighbors in graph: [Vertex{value='kamleh'}, Vertex{value='yasmeen'}]
- get the Neighbors in graph: [Vertex{value='tareq'}, Vertex{value='yasmeen'}]
+size (num of vertex ) in graph: 6
+get the Neighbors in graph: [Vertex{value='kamleh'}]
+get the Neighbors in graph: [Vertex{value='kamleh'}, Vertex{value='yasmeen'}]
+get the Neighbors in graph: [Vertex{value='tareq'}, Vertex{value='yasmeen'}]
 
+# Challenge Summary - cc36 / graph-breadth-first
+
+<!-- Description of the challenge -->
+
+Implement a breadth-first traversal on a graph.
+
+## Whiteboard Process
+
+<!-- Embedded whiteboard image -->
+
+![graph-breadth-first](graph/graph-breadth-first.jpg)
+
+## Approach & Efficiency
+
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Gig o/complexity
+time :O(n^2)
+space: o(n)
+
+## Solution
+
+<!-- Show how to run your code, and examples of it in action -->
+
+```Graph graph2 = new Graph();
+
+    graph.addVertex("Pandora");
+    graph.addVertex("Arendelle");
+    graph.addVertex("Metroville");
+    graph.addVertex("Monstroplolis");
+    graph.addVertex("Narnia");
+    graph.addVertex("Naboo");
+
+    graph.addEdge("Pandora", "Arendelle");
+    graph.addEdge("Arendelle", "Metroville");
+    graph.addEdge("Arendelle", "Monstroplolis");
+    graph.addEdge("Metroville", "Narnia");
+    graph.addEdge("Monstroplolis", "Metroville");
+    graph.addEdge("Naboo", "Narnia");
+    graph.addEdge("Naboo", "Metroville");
+    graph.addEdge("Naboo", "Monstroplolis");
+
+    System.out.println(" print graph Breadth First: "+graph.graphBreadthFirst(graph,"Pandora"));
+
+```
+the ruselt :  print graph Breadth First: [Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]
+
+
+## Feature Tasks
+Write the following method for the Graph class:
+breadth first
+Arguments: Node
+Return: A collection of nodes in the order they were visited.
+Display the collection

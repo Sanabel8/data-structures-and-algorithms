@@ -46,6 +46,27 @@ public class Graph {
     return adjVertices.get(new Vertex(value));
   }
 
+                //////////////cc36////////////////
+
+   public Set<String> graphBreadthFirst(Graph graph, String root) {
+      Set<String> visited = new LinkedHashSet<String>();
+      Queue<String> queue = new LinkedList<String>();
+      queue.add(root);
+      visited.add(root);
+      while (!queue.isEmpty()) {
+        String vertex = queue.poll();
+        for (Vertex v : graph.getNeighborsForVertex(vertex)) {
+          if (!visited.contains(v.value)) {
+            visited.add(v.value);
+            queue.add(v.value);
+          }
+        }
+      }
+      return visited;
+    }
+
+
+
 
   ////////add getter And setter////////
   public Map<Vertex, List<Vertex>> getAdjVertices() {

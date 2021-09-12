@@ -27,6 +27,31 @@ public class Library {
       System.out.println(" get the Neighbors in graph: "+graph.getNeighborsForVertex("sanabel"));
       System.out.println(" get the Neighbors in graph: "+graph.getNeighborsForVertex("ahmad"));
 
+           /////////////////////cc36///////////////////////////
+//Pandora, Arendelle, Metroville,
+// Monstroplolis, Narnia, Naboo
+    Graph graph2 = new Graph();
+
+    graph.addVertex("Pandora");
+    graph.addVertex("Arendelle");
+    graph.addVertex("Metroville");
+    graph.addVertex("Monstroplolis");
+    graph.addVertex("Narnia");
+    graph.addVertex("Naboo");
+
+    graph.addEdge("Pandora", "Arendelle");
+    graph.addEdge("Arendelle", "Metroville");
+    graph.addEdge("Arendelle", "Monstroplolis");
+    graph.addEdge("Metroville", "Narnia");
+    graph.addEdge("Monstroplolis", "Metroville");
+    graph.addEdge("Naboo", "Narnia");
+    graph.addEdge("Naboo", "Metroville");
+    graph.addEdge("Naboo", "Monstroplolis");
+
+    System.out.println(" print graph Breadth First: "+graph.graphBreadthFirst(graph,"Pandora"));
+    System.out.println(" print graph Breadth First: "+graph.graphBreadthFirst(graph,"Arendelle"));
+
+
     }
 
 }
