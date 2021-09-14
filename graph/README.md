@@ -210,10 +210,10 @@ Total price for Trip #2: 392
 
 # Challenge Summary - Code Challenge: Class 38
 <!-- Description of the challenge -->
-
+Conduct a depth first preorder traversal on a graph
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![]()
+![depth-first](graph/depth-first.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -221,9 +221,9 @@ Gig o/complexity
 time :O(n^2)
 space: o(n)
 
-
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
-
-
 ## Feature Tasks
+Write the following method for the Graph class:
+* depth first
+* Arguments: Node (Starting point of search)
+* Return: A collection of nodes in their pre-order depth-first traversal order
+* Display the collection
