@@ -45,7 +45,9 @@ public class Graph {
   public List<Vertex> getNeighborsForVertex(String value) {
     return adjVertices.get(new Vertex(value));
   }
-
+  public Set<Vertex> getVertices(){
+    return adjVertices.keySet();
+  }
                 //////////////cc36////////////////
 
    public Set<String> graphBreadthFirst(Graph graph, String root) {
@@ -65,7 +67,37 @@ public class Graph {
       return visited;
     }
 
+               //////////////cc37////////////////
 
+  public void addEdgeWithWeight(String data1, String data2, int weight) {
+    Vertex v1 = new Vertex(data1, weight);
+    Vertex v2 = new Vertex(data2, weight);
+
+    adjVertices.get(v1).add(v2);
+    adjVertices.get(v2).add(v1);
+  }
+  int cost;
+  public Integer businessTrip(Graph graph, List<String> trips){
+    cost = 0;
+    int tripsSize = trips.size();
+
+    for (int i = 0; i < tripsSize - 1; i ++){
+      findPath(trips.get(i), trips.get(i + 1), graph);
+    }
+    return cost;
+  }
+
+  private void findPath(String trip1, String trip2, Graph graph){
+
+    if (graph.getNeighborsForVertex(trip1) == null){
+      return;
+    }
+    for (Vertex vertex: graph.getNeighborsForVertex(trip1)) {
+      if (Objects.equals(trip2, vertex.value)){
+        cost += vertex.weight;
+      }
+    }
+  }
 
 
   ////////add getter And setter////////
