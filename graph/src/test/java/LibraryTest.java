@@ -155,7 +155,7 @@ public class LibraryTest {
     listOfTrips2.add("Metroville");
     listOfTrips2.add("Monstroplolis");
 
-      assertEquals("392",graph3.businessTrip(graph3,listOfTrips2).toString());
+      assertEquals("True,$392",graph3.businessTrip(graph3,listOfTrips2).toString());
 }
 
   @Test public void testgraphBusinessTrip2(){
@@ -176,7 +176,7 @@ public class LibraryTest {
     listOfTrips2.add("Arendelle");
     listOfTrips2.add("Monstroplolis");
 
-    assertEquals("42", graph2.businessTrip(graph2,listOfTrips2).toString());
+    assertEquals("True,$42", graph2.businessTrip(graph2,listOfTrips2).toString());
   }
   @Test public void testgraphBusinessTrip3(){
     Graph graph2 = new Graph();
@@ -195,7 +195,33 @@ public class LibraryTest {
     List<String> cities1 = new ArrayList<>();
     cities1.add("Arendelle");
     cities1.add("Narnia");
-    assertEquals("0", graph2.businessTrip(graph2,cities1).toString());
+    assertEquals("False, $0", graph2.businessTrip(graph2,cities1).toString());
   }
+        ////////////////////////cc38//////////////////////////////
 
+  @Test public void testgraphDepthFirst1(){
+    Graph graph4 = new Graph();
+
+    graph4.addVertex("A");
+    graph4.addVertex("B");
+    graph4.addVertex("C");
+    graph4.addVertex("D");
+    graph4.addVertex("E");
+    graph4.addVertex("F");
+    graph4.addVertex("G");
+    graph4.addVertex("H");
+
+    graph4.addEdge("A", "B");
+    graph4.addEdge("A", "D");
+    graph4.addEdge("B", "C");
+    graph4.addEdge("B", "D");
+    graph4.addEdge("C", "G");
+    graph4.addEdge("D", "F");
+    graph4.addEdge("D", "H");
+    graph4.addEdge("D", "E");
+    graph4.addEdge("F", "H");
+
+    assertEquals("[A, D, E, H, F, B, C, G]", graph4.depthFirst(graph4, "A").toString());
+
+  }
 }

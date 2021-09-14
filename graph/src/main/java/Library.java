@@ -82,8 +82,38 @@ public class Library {
     listOfTrips2.add("Metroville");
     listOfTrips2.add("Monstroplolis");
 
+    List<String> listOfTrips3 = new ArrayList<>();
+    listOfTrips3.add("Pandora");
+    listOfTrips3.add("Naboo");
+
     System.out.println("Total price for Trip #1: "+graph3.businessTrip(graph3,listOfTrips));
     System.out.println("Total price for Trip #2: "+graph3.businessTrip(graph3,listOfTrips2));
+    System.out.println("Total price for Trip #3: "+graph3.businessTrip(graph3,listOfTrips3));
+
+             /////////////////////cc38///////////////////////////
+    Graph graph4 = new Graph();
+
+    graph4.addVertex("A");
+    graph4.addVertex("B");
+    graph4.addVertex("C");
+    graph4.addVertex("D");
+    graph4.addVertex("E");
+    graph4.addVertex("F");
+    graph4.addVertex("G");
+    graph4.addVertex("H");
+
+    graph4.addEdge("A", "B");
+    graph4.addEdge("A", "D");
+    graph4.addEdge("B", "C");
+    graph4.addEdge("B", "D");
+    graph4.addEdge("C", "G");
+    graph4.addEdge("D", "F");
+    graph4.addEdge("D", "H");
+    graph4.addEdge("D", "E");
+    graph4.addEdge("F", "H");
+
+    System.out.println(" print graph depth First: "+graph4.depthFirst(graph4,"A"));
+    System.out.println(" print graph depth First: "+graph4.depthFirst(graph4,"B"));
 
 
   }
