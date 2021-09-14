@@ -136,3 +136,53 @@ breadth first
 Arguments: Node
 Return: A collection of nodes in the order they were visited.
 Display the collection
+
+
+
+# Challenge Summary - Code Challenge: Class 37
+<!-- Description of the challenge -->
+Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be? 
+Determine whether the trip is possible with direct flights, and how much it would cost.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![]()
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+time :O(n^2)
+space: o(n)
+
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+
+## Feature Tasks
+Write a function called business trip
+Arguments: graph, array of city names
+Return: cost or null
+
+
+
+<!-- 
+# Challenge Summary - Code Challenge: Class 38
+<!-- Description of the challenge -->
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![]()
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Gig o/complexity
+time :O(n^2)
+space: o(n)
+
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+
+## Feature Tasks -->
