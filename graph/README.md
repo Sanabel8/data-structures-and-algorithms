@@ -127,37 +127,75 @@ space: o(n)
     System.out.println(" print graph Breadth First: "+graph.graphBreadthFirst(graph,"Pandora"));
 
 ```
-the ruselt :  print graph Breadth First: [Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]
 
+the ruselt : print graph Breadth First: [Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]
 
 ## Feature Tasks
+
 Write the following method for the Graph class:
 breadth first
 Arguments: Node
 Return: A collection of nodes in the order they were visited.
 Display the collection
 
-
-
 # Challenge Summary - Code Challenge: Class 37
+
 <!-- Description of the challenge -->
-Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be? 
+
+Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
 Determine whether the trip is possible with direct flights, and how much it would cost.
 
 ## Whiteboard Process
+
 <!-- Embedded whiteboard image -->
-![]()
+
+![graph-business-trip](graph/graph-business-trip.jpg)
 
 ## Approach & Efficiency
+
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
 Gig o/complexity
 time :O(n^2)
 space: o(n)
 
-
 ## Solution
+
 <!-- Show how to run your code, and examples of it in action -->
 
+```
+ Graph graph3 = new Graph();
+
+    graph3.addVertex("Pandora");
+    graph3.addVertex("Arendelle");
+    graph3.addVertex("Metroville");
+    graph3.addVertex("Monstroplolis");
+    graph3.addVertex("Narnia");
+    graph3.addVertex("Naboo");
+
+    graph3.addEdgeWithWeight("Pandora", "Arendelle",150);
+    graph3.addEdgeWithWeight("Arendelle", "Metroville",82);
+    graph3.addEdgeWithWeight("Arendelle", "Monstroplolis",42);
+    graph3.addEdgeWithWeight("Metroville", "Narnia",37);
+    graph3.addEdgeWithWeight("Arendelle", "Metroville",99);
+    graph3.addEdgeWithWeight("Monstroplolis", "Metroville",105);
+    graph3.addEdgeWithWeight("Naboo", "Narnia",250);
+    graph3.addEdgeWithWeight("Naboo", "Metroville",26);
+    graph3.addEdgeWithWeight("Naboo", "Monstroplolis",73);
+
+    List<String> listOfTrips = new ArrayList<>();
+
+    listOfTrips.add("Pandora");
+    listOfTrips.add("Arendelle");
+
+    List<String> listOfTrips2 = new ArrayList<>();
+    listOfTrips2.add("Naboo");
+    listOfTrips2.add("Narnia");
+    listOfTrips2.add("Metroville");
+    listOfTrips2.add("Monstroplolis");
+
+    System.out.println("Total price for Trip #1: "+graph3.businessTrip(graph3,listOfTrips));
+    System.out.println("Total price for Trip #2: "+graph3.businessTrip(graph3,listOfTrips2));
 
 ## Feature Tasks
 Write a function called business trip
@@ -165,8 +203,11 @@ Arguments: graph, array of city names
 Return: cost or null
 
 
+```
+the reslut :
+Total price for Trip #1: 150
+Total price for Trip #2: 392
 
-<!-- 
 # Challenge Summary - Code Challenge: Class 38
 <!-- Description of the challenge -->
 
@@ -185,4 +226,4 @@ space: o(n)
 <!-- Show how to run your code, and examples of it in action -->
 
 
-## Feature Tasks -->
+## Feature Tasks

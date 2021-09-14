@@ -161,7 +161,7 @@ Implement a simplified LEFT JOIN for 2 Hashmaps.
 
 <!-- Description of the challenge -->
 
-![Hashmap LEFT JOIN](hashing-table/hash-left-join.jpg)
+![Hashmap LEFT JOIN](hashing-table/hash-leftjoin.jpg)
 
 ## Approach & Efficiency
 

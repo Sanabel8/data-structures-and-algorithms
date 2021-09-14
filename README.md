@@ -8,7 +8,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 
 ### 401 Data Structures, Code Challenges
                                                     
- |code-challenges |         readme                                                 |
+ |code-challenges |         Readme                                                 |
  |--------------- |----------------------------------------------------------------|
  |code-challenge1 |   [array-reverse](challenge/README.md)                         |
  |code-challenge2 |   [array-insert-shift](challenge2)                             |
@@ -24,11 +24,12 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
  |code-challenge26|   [insertSort](insertSort/README.md)                           | 
  |code-challenge27|   [merge-sort](mergeSort/README .md)                           | 
  |code-challenge28|   [quick-sort](Quick-Sort/README.md)                           | 
- |code-challenge29|   [](hash-tables/README.md)                                    | 
- |code-challenge30|   [Hash Table Implementation]()                                | 
+ |code-challenge29|   []()                                                         | 
+ |code-challenge30|   [Hash Table Implementation](README.md)                       | 
  |code-challenge31|   [repeating-world](repeateWord/README.md)                     | 
- |code-challenge32|   []()                                                         | 
- |code-challenge33|   []()                                                         | 
- |code-challenge34|   []()                                                         | 
+ |code-challenge32|   [insertion-binarytree](hashing-table/README.md)              | 
+ |code-challenge33|   [Hashmap LEFT JOIN](hashing-table/README.md)                 | 
+ |code-challenge35|   [graph](graph/README.md)                                     | 
+ |code-challenge36|   [graph-breadth-first](graph/README.md)                       | 
 
 
