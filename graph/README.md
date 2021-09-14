@@ -156,7 +156,7 @@ Determine whether the trip is possible with direct flights, and how much it woul
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 Gig o/complexity
-time :O(n^2)
+time :O(n)
 space: o(n)
 
 ## Solution
@@ -208,12 +208,14 @@ the reslut :
 Total price for Trip #1: 150
 Total price for Trip #2: 392
 
+
 # Challenge Summary - Code Challenge: Class 38
 <!-- Description of the challenge -->
+Conduct a depth first preorder traversal on a graph
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![]()
+![graph-depth-first](graph/depth-first.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -221,9 +223,40 @@ Gig o/complexity
 time :O(n^2)
 space: o(n)
 
-
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+```Graph graph4 = new Graph();
 
+    graph4.addVertex("A");
+    graph4.addVertex("B");
+    graph4.addVertex("C");
+    graph4.addVertex("D");
+    graph4.addVertex("E");
+    graph4.addVertex("F");
+    graph4.addVertex("G");
+    graph4.addVertex("H");
+
+    graph4.addEdge("A", "B");
+    graph4.addEdge("A", "D");
+    graph4.addEdge("B", "C");
+    graph4.addEdge("B", "D");
+    graph4.addEdge("C", "G");
+    graph4.addEdge("D", "F");
+    graph4.addEdge("D", "H");
+    graph4.addEdge("D", "E");
+    graph4.addEdge("F", "H");
+
+    System.out.println(" print graph depth First: "+graph4.depthFirst(graph4,"A"));
+    System.out.println(" print graph depth First: "+graph4.depthFirst(graph4,"B"));
+
+```
+the result :
+ print graph depth First: [A, D, E, H, F, B, C, G]
+ print graph depth First: [B, D, E, H, F, A, C, G]
 
 ## Feature Tasks
+Write the following method for the Graph class:
+* depth first
+* Arguments: Node (Starting point of search)
+* Return: A collection of nodes in their pre-order depth-first traversal order
+* Display the collection

@@ -13,6 +13,22 @@ public class Vertex {
     this.weight = weight;
   }
 
+  public String getValue() {
+    return value;
+  }
+
+  public void setValue(String value) {
+    this.value = value;
+  }
+
+  public int getWeight() {
+    return weight;
+  }
+
+  public void setWeight(int weight) {
+    this.weight = weight;
+  }
+
   //make Override for hashCode
   @Override
   public int hashCode() {
